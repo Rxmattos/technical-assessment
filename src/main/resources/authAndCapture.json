@@ -1,0 +1,37 @@
+{
+  "clientReferenceInformation": {
+    "code": "TC50171_3",
+    "partner": {
+      "thirdPartyCertificationNumber": "123456789012"
+    }
+  },
+  "orderInformation": {
+    "billTo": {
+      "firstName": "John",
+      "lastName": "Deo",
+      "address2": "Address 2",
+      "address1": "201 S. Division St.",
+      "postalCode": "48104-2201",
+      "locality": "Ann Arbor",
+      "administrativeArea": "MI",
+      "country": "BR",
+      "email": "teste@teste.com.br"
+    },
+    "amountDetails": {
+      "totalAmount": "222.00",
+      "currency": "BRL"
+    }
+  },
+  "paymentInformation": {
+    "card": {
+      "expirationYear": "2031",
+      "number": "5555555555554444",
+      "securityCode": "123",
+      "expirationMonth": "12",
+      "type": "002"
+    }
+  },
+  "processingInformation": {
+    "capture": true
+  }
+}

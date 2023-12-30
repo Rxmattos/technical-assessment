@@ -1,0 +1,11 @@
+{
+  "clientReferenceInformation": {
+    "code": "test_capture"
+  },
+  "orderInformation": {
+    "amountDetails": {
+      "totalAmount": "105.00",
+      "currency": "BRL"
+    }
+  }
+}
