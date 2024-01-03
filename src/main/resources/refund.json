@@ -1,0 +1,11 @@
+{
+  "clientReferenceInformation": {
+    "code": "T0004"
+  },
+  "orderInformation": {
+    "amountDetails": {
+      "totalAmount": "102.00",
+      "currency": "BRL"
+    }
+  }
+}

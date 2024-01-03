@@ -1,0 +1,11 @@
+{
+  "clientReferenceInformation": {
+    "code": "T00001"
+  },
+  "reversalInformation": {
+    "reason": "testing",
+    "amountDetails": {
+      "totalAmount": "102.00"
+    }
+  }
+}

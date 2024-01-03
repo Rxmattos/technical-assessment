@@ -35,7 +35,6 @@ public class CyberSourceClient {
 
         var response = rest.postForEntity(URI.create(uri), request, String.class);
 
-        System.out.println(request.getBody());
 
         return response.getBody();
 
@@ -53,12 +52,38 @@ public class CyberSourceClient {
 
         var response = rest.postForEntity(URI.create(uri), request, String.class);
 
-        System.out.println(request.getBody());
 
         return response.getBody();
     }
 
-    public static void sendAuthorizationWithCapture() {
+    public String sendReversal(String paymentId, String paymentJson) throws IOException, ConfigException {
+        var resource = String.format("/payments/%s/reversals", paymentId);
+        var path = Paths.get("src/main/resources/" + paymentJson);
+        String payment = String.join("", Files.readAllLines(path));
+
+        var uri = buildURI(resource);
+
+        var headers = buildHeader(payment, resource);
+        var request = new HttpEntity<>(payment, headers);
+
+        var response = rest.postForEntity(URI.create(uri), request, String.class);
+
+        return response.getBody();
+    }
+
+    public String sendRefund(String paymentId, String paymentJson) throws IOException, ConfigException {
+        var resource = String.format("/payments/%s/refunds", paymentId);
+        var path = Paths.get("src/main/resources/" + paymentJson);
+        String payment = String.join("", Files.readAllLines(path));
+
+        var uri = buildURI(resource);
+
+        var headers = buildHeader(payment, resource);
+        var request = new HttpEntity<>(payment, headers);
+
+        var response = rest.postForEntity(URI.create(uri), request, String.class);
+
+        return response.getBody();
     }
 
     private static String buildURI(String resource) {

@@ -1,6 +1,6 @@
 {
   "clientReferenceInformation": {
-    "code": "T00001",
+    "code": "TC50171_3",
     "partner": {
       "thirdPartyCertificationNumber": "123456789012"
     }
@@ -15,7 +15,7 @@
       "locality": "Ann Arbor",
       "administrativeArea": "MI",
       "country": "BR",
-      "email": "test@cybersource.com"
+      "email": "assessment@approval.com.br"
     },
     "amountDetails": {
       "totalAmount": "102.00",
