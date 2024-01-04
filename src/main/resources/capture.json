@@ -1,10 +1,10 @@
 {
   "clientReferenceInformation": {
-    "code": "test_capture"
+    "code": "T00001"
   },
   "orderInformation": {
     "amountDetails": {
-      "totalAmount": "105.00",
+      "totalAmount": "222.00",
       "currency": "BRL"
     }
   }

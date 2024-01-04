@@ -1,6 +1,6 @@
 {
   "clientReferenceInformation": {
-    "code": "TC50171_3",
+    "code": "T00005",
     "partner": {
       "thirdPartyCertificationNumber": "123456789012"
     }
@@ -18,7 +18,7 @@
       "email": "assessment@reject.com.br"
     },
     "amountDetails": {
-      "totalAmount": "102.00",
+      "totalAmount": "225.00",
       "currency": "BRL"
     }
   },

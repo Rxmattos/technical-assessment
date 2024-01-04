@@ -72,7 +72,7 @@ public class CyberSourceClient {
     }
 
     public String sendRefund(String paymentId, String paymentJson) throws IOException, ConfigException {
-        var resource = String.format("/payments/%s/refunds", paymentId);
+        var resource = String.format("/captures/%s/refunds", paymentId);
         var path = Paths.get("src/main/resources/" + paymentJson);
         String payment = String.join("", Files.readAllLines(path));
 

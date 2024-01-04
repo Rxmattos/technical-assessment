@@ -58,7 +58,7 @@ public class TestPayment {
     @Test
     //A payment credit (refund).
     void testAuthRefund() throws ConfigException, IOException {
-        String authResponse = client.sendAuthorization("authOnly.json");
+        String authResponse = client.sendAuthorization("authAndCapture.json");
         var responseAsJson = new Gson().fromJson(authResponse, JsonObject.class);
         var paymentId = responseAsJson.get("id").getAsString();
         Assertions.assertNotNull(authResponse);
@@ -78,4 +78,12 @@ public class TestPayment {
         System.out.println(response);
         Assertions.assertNotNull(response);
     }
+
+    @Test
+    void testAuthRefund2() throws ConfigException, IOException {
+        String reversalResponse = client.sendRefund("7043330878746522504953", "refund.json");
+        Assertions.assertNotNull(reversalResponse);
+        System.out.println(reversalResponse);
+    }
+
 }

@@ -1,6 +1,6 @@
 {
   "clientReferenceInformation": {
-    "code": "TC50171_3",
+    "code": "T0004",
     "partner": {
       "thirdPartyCertificationNumber": "123456789012"
     }
@@ -18,14 +18,14 @@
       "email": "teste@teste.com.br"
     },
     "amountDetails": {
-      "totalAmount": "221.00",
+      "totalAmount": "224.00",
       "currency": "BRL"
     }
   },
   "paymentInformation": {
     "card": {
       "expirationYear": "2031",
-      "number": "5555555555554444",
+      "number": "5170533527911658",
       "securityCode": "123",
       "expirationMonth": "12",
       "type": "002"

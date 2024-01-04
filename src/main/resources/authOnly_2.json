@@ -1,6 +1,6 @@
 {
   "clientReferenceInformation": {
-    "code": "TC50171_3",
+    "code": "T00001",
     "partner": {
       "thirdPartyCertificationNumber": "123456789012"
     }
@@ -18,7 +18,7 @@
       "email": "test@cybersource.com"
     },
     "amountDetails": {
-      "totalAmount": "105.00",
+      "totalAmount": "221.00",
       "currency": "BRL"
     }
   },
